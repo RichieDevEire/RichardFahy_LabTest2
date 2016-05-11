@@ -2,9 +2,10 @@ void setup()
 {
   size(800,500);
   
-  // player
+  // player position
   
-  // clouds
+  // clouds movement
+  // add new clouds
 }
 
 void draw()
