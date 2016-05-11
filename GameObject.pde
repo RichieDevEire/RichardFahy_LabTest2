@@ -1,4 +1,4 @@
-Class GameObject
+class GameObject
 {
  GameObject(float x, float y)
 {

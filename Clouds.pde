@@ -1,5 +1,5 @@
 // class
-Class Clouds extends GameObject
+class Clouds extends GameObject
 {
   PVector forward;
   float speed;
@@ -22,11 +22,11 @@ Clouds(float x, float y, float t, float s)
     h = 25;
     halfH = h/2;
 
-    speed = random(1, 5);
+    speed = random(0.5f, 2.0f);
 
     position.x = start;
 
-    c = color(random(255));
+    c = color(random(127,255));
   }
   void update()
   {
@@ -36,7 +36,7 @@ Clouds(float x, float y, float t, float s)
     forward.mult(speed);
     position.add(forward);
 
-    if (position.x = -25)
+    if (position.x <= -25)
     {
       initialize();
     }
@@ -56,6 +56,8 @@ Clouds(float x, float y, float t, float s)
     fill(c);
     noStroke();
     ellipse(0, 0, w, h);
+    ellipse(0,-10, w -5, h);
+    ellipse(0,10, w -5, h);
   }
 }
 
